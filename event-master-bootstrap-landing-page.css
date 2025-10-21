@@ -1,0 +1,240 @@
+    /* Root and body font */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
+     /*  scroll-behavior: smooth; */
+    }
+
+    /* Navbar styling */
+    .nav-img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+    .navbar-custom {
+      background: linear-gradient(90deg, #0d47a1, #1976d2);
+      transition: background-color 0.5s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    .navbar-custom .nav-link, .navbar-brand {
+      color: #e3f2fd !important;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .navbar-custom .nav-link:hover {
+      color: #ffca28 !important;
+      text-shadow: 0 0 5px #ffca28;
+    }
+    
+    .navbar-toggler {
+      border: none;
+      color: black !important;
+      background-color: white !important;
+      transition: background-color 0.3s ease;
+    }
+    
+
+    /* Home section */
+    #home {
+      background: url('https://s3.ap-south-1.amazonaws.com/new-assets.ccbp.in/frontend/loading-data/niat_responsive/niat_coding_questions/cp_10_b_new_v6_bg_1.jpg') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: fadeIn 2s ease;
+    }
+    #home h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      margin-bottom: 1rem;
+      animation: rotateIn 3s linear infinite alternate;
+    }
+    #home p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+    #home .btn {
+      min-width: 150px;
+      border-radius: 30px;
+      font-weight: 600;
+      margin: 0 0.5rem;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    #home .btn-primary {
+      background-color: #ffca28;
+      border-color: #ffca28;
+      color: #0d47a1;
+    }
+    #home .btn-primary:hover {
+      background-color: #f9a825;
+      border-color: #f9a825;
+      transform: scale(1.1);
+    }
+    #home .btn-outline-light {
+      color: white;
+      border-color: white;
+    }
+    #home .btn-outline-light:hover {
+      background-color: white;
+      color: #0d47a1;
+      transform: scale(1.1);
+    }
+
+    /* Cards - categories, featured */
+    .card-custom {
+      background-color: #ffffffcc;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      min-height: 300px;
+    }
+    .card-custom:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+    }
+    .card-custom h2 {
+      color: #0d47a1;
+      font-weight: 700;
+      margin-top: 15px;
+    }
+    .card-custom p {
+      color: #495057;
+      padding: 0 15px 15px;
+    }
+    .card-custom img {
+      border-radius: 15px 15px 0 0;
+      max-height: 150px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* Featured section */
+    #features-eve {
+      background: #ffca2844;
+      padding: 3rem 0;
+    }
+
+    /* Download section */
+    .download {
+      background: radial-gradient(circle at center, #ffca28bb, #0d47a1bb);
+      border-radius: 10px;
+      padding: 3rem;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 3rem;
+    }
+    .download img {
+      width: 250px;
+      border-radius: 15px;
+      animation: bounce 1.5s ease-in-out infinite alternate;
+    }
+    .download h2 {
+      flex-basis: 100%;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .download p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    .download button {
+      border-radius: 30px;
+      padding: 0.75rem 2rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      border: none;
+      background-color: white;
+      color: #0d47a1;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      display: block;
+      margin: 0 auto;
+    }
+    .download button:hover {
+      background-color: #f9a825;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    /* Contact section */
+    #contactus {
+      background-color: #0d47a1;
+      color: white;
+      padding: 3rem 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+    #contactus h1 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    #contactus p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    #contactus .con-icons {
+      background-color: white;
+      color: #0d47a1;
+      border-radius: 50%;
+      padding: 10px;
+      margin: 0 10px;
+      font-size: 1.8rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      display: inline-block;
+    }
+    #contactus .con-icons:hover {
+      background-color: #ffca28;
+      color: #0d47a1;
+      transform: scale(1.2);
+    }
+
+    /* Animations */
+    @keyframes rotateIn {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(15deg);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes bounce {
+      to {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 767.98px) {
+      #home h1 {
+        font-size: 2rem;
+      }
+      #home p {
+        font-size: 1rem;
+      }
+      .card-custom {
+        min-height: 250px;
+      }
+      .download img {
+        width: 100%;
+      }
+    }
